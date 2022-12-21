@@ -1,0 +1,7 @@
+# Set to true if you want fished items to be sent directly to the player's inventory
+itemsDirectlyToInventory: false
+# Set to true if you want players to be sent a message telling them what they fished
+announceFishedItems: false
+# If announceFishedItems is set to true, use this to add a prefix to the message
+# For colours and other stylization, check out https://docs.adventure.kyori.net/minimessage/index.html
+chatPrefix: '<yellow>'

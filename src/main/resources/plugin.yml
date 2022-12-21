@@ -1,0 +1,14 @@
+name: AstsFancyFish
+main: com.astelon.astsfancyfish.AstsFancyFish
+version: '1.0.0-alpha.1'
+author: Astelon
+api-version: '1.18'
+commands:
+  fancyfish:
+    description: Base command for Ast's Fancy Fish plugin.
+    aliases: [ ff ]
+    permission: astsfancyfish.admin
+permissions:
+  astsfancyfish.admin:
+    description: Gives access to all commands of the plugin.
+    default: op
