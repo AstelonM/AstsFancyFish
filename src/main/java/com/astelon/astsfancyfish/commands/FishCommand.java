@@ -1,5 +1,6 @@
-package com.astelon.astsfancyfish;
+package com.astelon.astsfancyfish.commands;
 
+import com.astelon.astsfancyfish.AstsFancyFish;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.command.Command;

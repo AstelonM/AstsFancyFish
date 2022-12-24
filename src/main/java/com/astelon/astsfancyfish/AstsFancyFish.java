@@ -1,5 +1,7 @@
 package com.astelon.astsfancyfish;
 
+import com.astelon.astsfancyfish.commands.FishCommand;
+import com.astelon.astsfancyfish.listeners.FishingListener;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 

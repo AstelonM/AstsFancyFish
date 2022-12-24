@@ -1,5 +1,7 @@
-package com.astelon.astsfancyfish;
+package com.astelon.astsfancyfish.listeners;
 
+import com.astelon.astsfancyfish.AstsFancyFish;
+import com.astelon.astsfancyfish.Config;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import net.kyori.adventure.text.minimessage.tag.resolver.Placeholder;
 import org.bukkit.entity.Entity;
