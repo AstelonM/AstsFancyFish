@@ -1,0 +1,35 @@
+# Names and description support MiniMessage format. More info here: https://docs.adventure.kyori.net/minimessage/index.html
+
+# A small note: this fish is based on the anchovies found in Stardew Valley. Please don't mind the inaccuracies with the
+# real life anchovies
+
+# ID of the fish
+anchovy:
+  # Name of the fish as it appears as entity and as item
+  name: "Anchovy"
+  # Description of the fish. Found on the item form lore. Each entry in the list represents a line of lore
+  # Styling is supported, but must be done for each line
+  description:
+    - "A small silver fish found in the"
+    - "ocean."
+  # Set how the fish looks like
+  appearance:
+    # Available options: COD, SALMON, PUFFERFISH, TROPICAL_FISH
+    fishType: TROPICAL_FISH
+    # If fishType is TROPICAL_FISH, then the following fields are used to customize how the fish will look like. Not needed otherwise
+    # See https://jd.papermc.io/paper/1.18/org/bukkit/entity/TropicalFish.Pattern.html for available options
+    pattern: KOB
+    # See https://jd.papermc.io/paper/1.18/org/bukkit/DyeColor.html for available options for both colour fields
+    bodyColour: LIGHT_BLUE
+    patternColour: LIGHT_BLUE
+  # Conditions under which the fish appears. Note that the biome is not set here
+  conditions:
+    # List of time periods when the fish appears. Format is startHour-endHour, with startHour being the first hour it can be caught
+    # and endHour the last hour
+    # 0-23 means the fish can be caught at any time of the day
+    timePeriods:
+      - "0-23"
+    # Options are SUN, RAIN, STORM. Note that snowy is not an option because it depends on the biome
+    weather: SUN
+    # Set to true if the fish will only appear if the particular spot has no block anywhere above it
+    surface: false

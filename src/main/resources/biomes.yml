@@ -1,0 +1,14 @@
+# Add biomes whose fish you want to modify. Full list of options available here https://jd.papermc.io/paper/1.18/org/bukkit/block/Biome.html
+# Biome names can be in lower case
+
+# This does not affect the catching chances of junk or treasure. It works by replacing the fish caught following the ratios
+# defined below. Note that the ratios don't need to add up to anything. They add up to 100 in the example for simplicity
+
+# Use cod, salmon, tropicalFish and pufferfish for the default fish in the game. To add your custom fish, use the IDs
+# defined in the fish.yml file
+ocean:
+  cod: 55
+  salmon: 25
+  tropicalFish: 2
+  pufferfish: 13
+  anchovy: 5
