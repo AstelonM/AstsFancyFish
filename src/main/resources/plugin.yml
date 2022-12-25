@@ -1,6 +1,6 @@
 name: AstsFancyFish
 main: com.astelon.astsfancyfish.AstsFancyFish
-version: '1.0.0-alpha.1'
+version: '1.0.0-alpha.2'
 author: Astelon
 api-version: '1.18'
 commands:

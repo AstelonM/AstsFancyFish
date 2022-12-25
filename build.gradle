@@ -10,7 +10,7 @@ java {
 }
 
 group 'com.astelon'
-version '1.0.0-alpha.1'
+version '1.0.0-alpha.2'
 
 repositories {
     maven { url 'https://repo.papermc.io/repository/maven-public/' }
