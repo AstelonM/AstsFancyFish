@@ -47,17 +47,17 @@ public class FishingListener implements Listener {
                 Location location = event.getHook().getLocation();
                 //TODO find the proper method
                 Biome biome = location.getBlock().getBiome();
-                if (!biomeManager.hasDifferentFish(biome))
-                    return;
-                World world = player.getWorld();
-                int hour = (int) ((world.getTime() / 1000) + 6) % 24;
-                Weather weather = getWeather(world);
-                int highestBlock = world.getHighestBlockYAt(location);
-                boolean surface = location.getBlockY() >= highestBlock;
-                BaseFish fish = biomeManager.getFish(biome, hour, weather, surface);
-                if (fish != null) {
-                    itemStack = fish.getItemStack();
-                    item.setItemStack(itemStack);
+                if (biomeManager.hasDifferentFish(biome)) {
+                    World world = player.getWorld();
+                    int hour = (int) ((world.getTime() / 1000) + 6) % 24;
+                    Weather weather = getWeather(world);
+                    int highestBlock = world.getHighestBlockYAt(location);
+                    boolean surface = location.getBlockY() >= highestBlock;
+                    BaseFish fish = biomeManager.getFish(biome, hour, weather, surface);
+                    if (fish != null) {
+                        itemStack = fish.getItemStack();
+                        item.setItemStack(itemStack);
+                    }
                 }
             }
             Config config = plugin.getConfiguration();
