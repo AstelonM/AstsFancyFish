@@ -45,8 +45,7 @@ public class FishingListener implements Listener {
             ItemStack itemStack = item.getItemStack();
             if (isFish(itemStack)) {
                 Location location = event.getHook().getLocation();
-                //TODO find the proper method
-                Biome biome = location.getBlock().getBiome();
+                Biome biome = location.getBlock().getComputedBiome();
                 if (biomeManager.hasDifferentFish(biome)) {
                     World world = player.getWorld();
                     int hour = (int) ((world.getTime() / 1000) + 6) % 24;
